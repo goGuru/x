@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Header } from './header.type';
 
 @Component({
   selector: 'header',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title: string = "NHL Gag";
+  @Input() inData: Header;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  ngOnChanges(){
+    console.log(this.inData);
+  }
 }

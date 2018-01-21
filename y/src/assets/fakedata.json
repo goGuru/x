@@ -1,0 +1,14 @@
+{
+    "header": 
+        [
+            { "title": "NHL", "links": [
+                    {"name":"Home", "url":"/"},
+                    {"name":"Latest", "url":"/latest"}
+            ]}
+        ],
+    "articles": 
+        [
+            { "id": 0, "user": "Jocke", "text": "This is awesome..", "date": "", "hashkeys":   ["art","cool"] },
+            { "id": 1, "user": "Johanna", "text": "This is not awesome..", "date": "", "hashkeys": ["fail","bad"] }
+        ]
+}

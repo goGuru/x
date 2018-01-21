@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Article } from './article.type';
 
 @Component({
   selector: 'arts',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./arts.component.css']
 })
 export class ArtsComponent implements OnInit {
+  @Input() articles: Article[];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  ngOnChanges(){
+    console.log(this.articles);
   }
 
 }

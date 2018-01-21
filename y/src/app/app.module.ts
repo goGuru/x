@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { ArtsComponent } from './content/arts/arts.component';
 
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ArtsComponent } from './content/arts/arts.component';
     ArtsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
